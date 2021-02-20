@@ -143,35 +143,48 @@ img {
   color: var(--primary-text-color);
 }
 
-.nav-links :hover,
+/* .nav-links :hover,
 .nav-links :focus {
   color: var(--link-collor);
-}
+} */
 
 .nav-links {
   display: flex;
-  margin-left: auto;
+  margin-left: auto; 
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
-.nav-icon{
+.nav-icon {
   display: block;
   width: 16px;
   height: 12px;
-
-
+  fill: var( --primary-text-color);
+  /* fill: carrentColor; */
 }
 
-.nav-icon:hover,
-.nav-icon:focus{
-  color: var(--link-collor);
-}
 
 .nav-link{
   display: flex; 
   align-content: center;
-
 }
 
+
+.nav-links .item :hover,
+.nav-links .item :focus{
+  color: var(--link-collor);
+}
+
+
+.nav-icon :hover{
+  fill: carrentColor ;
+}
+
+  
+
+.item {
+  outline: 1px solid #008000
+}
 
 /* .nav-links .item {
   outline: 1px solid green;
@@ -277,7 +290,16 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--h-collor);
+} 
+
+.benefit-icon{ 
+  
+  background-color: rgb(230, 19, 19); 
+  height: 120px;
 }
+
+
+
 
 /*  то что мы делаем студия */
 .work {
