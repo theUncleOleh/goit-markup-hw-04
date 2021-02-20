@@ -20,6 +20,8 @@ body {
   --h-collor: #212121;
   --link-collor: #2196f3;
   --header-back: #ececec;
+  --social-icon: #AFB1B8;
+
 }
 
 /* контейнер */
@@ -391,6 +393,8 @@ img {
 
 .team-card-item {
   margin-right: 30px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .team-card-item:last-child {
@@ -400,6 +404,7 @@ img {
 .name {
   text-align: center;
   margin-top: 30px;
+  margin-bottom: 0px;
   color: var(--h-collor);
   font-family: Roboto, sans-serif;
   font-style: normal;
@@ -411,13 +416,49 @@ img {
 .profession {
   text-align: center;
   margin-top: 10px;
-  margin-bottom: 30px;
+  margin-bottom: 16px;
   color: var(--primary-text-color);
   font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 19px;
+}
+
+.sociall-box{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.team-box{ 
+  display: flex;
+  width: 44px;
+  height: 44px;
+  /* background-color: red; */
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.team-box:hover,
+.team-box:focus{ 
+  
+  background-color: var(--link-collor);
+}
+
+.team-box:not(:first-child){
+  margin-left: 10px;
+}
+
+.team-icon{
+  fill: var(--social-icon)
+}
+
+.team-icon:hover,
+.team-icon:focus{
+  fill: var(--white-text-collor);  
+  
 }
 
 /* Подвал сайта  */
