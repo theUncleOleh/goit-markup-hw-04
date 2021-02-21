@@ -23,7 +23,7 @@ body {
   --header-back: #ececec;
   --social-icon: #AFB1B8;
   --team-back: #F5F4FA;
-
+   --back: rgba(255,255,255,0.1)
 }
 
 /* контейнер */
@@ -167,11 +167,11 @@ img {
 .nav-icon {
   display: block;
   width: 16px;
-  height: 12px;
-  fill: var( --primary-text-color);
+  height: 12px; 
+  margin-right: 10px;
+  fill: var(--primary-text-color);
   /* fill: carrentColor; */
 }
-
 
 .nav-link{
   display: flex; 
@@ -185,8 +185,8 @@ img {
 }
 
 
-.nav-icon :hover {
-  fill: var(--link-collor) ;
+.nav-icon{
+  fill: currentColor;
 }
 
   
@@ -213,13 +213,14 @@ img {
 .hero {
   text-align: center; 
 }
- 
+
+
 .overlay {
   max-width: 1600px;
   height: 600px;
   margin-left: auto;
-  margin-right: auto;
-  background-image: url(../images/Img\ \(5\).jpg);
+  margin-right: auto;  
+  background-image: linear-gradient(to right,rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)),  url(../images/Img\ \(5\).jpg);
   background-position: center;
   background-size: cover;
 }
@@ -506,6 +507,7 @@ img {
   display: flex;
   margin-top: 0px; 
   margin-bottom: 0px;
+   padding-left: 0px;
 } 
 
 .client-item{
@@ -515,8 +517,8 @@ img {
 }
 
 
-.client-item:not(:last-child){
-  margin-right: 30px;
+.client-item:not(:first-child){
+  margin-left: 30px;
 }
 
 
@@ -550,11 +552,18 @@ img {
 
 
 /* Подвал сайта  */
+/* общее правило для всего футера */
+.footer-all{
+  display: flex;
+  align-items: baseline;
+  
+}
+
 .footer-back {
   padding-top: 6px;
   background-color: var(--footer-back);
 }
-
+/* футер лого и адрес */
 .footer-logo {
   display: block;
 }
@@ -627,6 +636,61 @@ img {
   color: var(--primary-text-color);
   margin-top: 9px;
   margin-bottom: 9px;
+}
+/* футер бокс:присоединяйся и соц сети */
+
+.footer-box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-left: 0px;
+}
+
+.footer-sociall{
+  margin-left: 70px;
+}
+
+.footer-title{
+  margin-top: 0px;
+  margin-bottom: 20px;
+  font-family: Roboto, sans-serif;  
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px; 
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--white-text-collor);
+}
+
+.footer-mark{
+  width: 44px;
+  height: 44px;
+
+}
+
+.footer-mark:not(:first-child){
+  margin-left: 10px;
+}
+
+.footer-link{
+  display: flex;
+  align-items: center; 
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%; 
+  
+}
+
+.footer-link:hover{
+  background-color: var(--link-collor) ;
+}
+
+.footer-icon{
+  fill: var(--white-text-collor) ;
 }
 
 /* кнопки в портфолио */
