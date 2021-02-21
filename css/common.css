@@ -17,7 +17,8 @@ ul {
 }
 
 a {
-  text-decoration: none;
+  text-decoration: none;  
+  /* color: white */
 }
 
 *,

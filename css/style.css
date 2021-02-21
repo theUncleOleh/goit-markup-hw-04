@@ -10,6 +10,7 @@
  */
 body {
   font-family: 'Roboto', sans-serif;
+  color: #757575;
 }
 
 /* css-переменные. */
@@ -21,6 +22,7 @@ body {
   --link-collor: #2196f3;
   --header-back: #ececec;
   --social-icon: #AFB1B8;
+  --team-back: #F5F4FA;
 
 }
 
@@ -44,6 +46,11 @@ img {
   height: auto;
 }
 
+/* .link-icon .icon{
+  fill: var(--social-icon);
+} */
+
+
 .site-nav .item:last-child {
   margin-right: 0px;
 }
@@ -53,7 +60,7 @@ img {
 }
 
 .link-black {
-  color: #000000;
+  color: black;
 }
 
 /*  Хедер сайта */
@@ -362,6 +369,7 @@ img {
 .our-team {
   padding-top: 94px;
   padding-bottom: 94px;
+  background-color: var(--team-back) ;
 }
 
 .team-title {
@@ -427,39 +435,119 @@ img {
 
 .sociall-box{
   display: flex;
-  justify-content: center;
-  margin-bottom: 30px;
-}
+  align-items: center;
+  justify-content: center; 
+  padding-left: 0px;
+  margin-top: 16px;
+  margin-bottom: 30px ;
+} 
 
-.team-box{ 
+/*  сначала дать цвет иконки на ссылку, а потом изменить ее при ховере */
+
+.link-icon{
   display: flex;
   width: 44px;
   height: 44px;
-  /* background-color: red; */
+  color: var(--social-icon);
+  /* background-color: blue; */
   align-items: center;
   justify-content: center;
   border-radius: 50%;
 }
 
-.team-box:hover,
-.team-box:focus{ 
-  
-  background-color: var(--link-collor);
-}
-
-.team-box:not(:first-child){
+.item-icon:not(:first-child){
   margin-left: 10px;
 }
 
-.team-icon{
-  fill: var(--social-icon)
+.link-icon:hover {
+  background-color: var(--link-collor);
+  color: var(--white-text-collor);
+}
+/* .icon{
+  fill: var( --social-icon)
+
+} */
+
+.icon{
+  fill: currentColor;
 }
 
-.team-icon:hover,
-.team-icon:focus{
-  fill: var(--white-text-collor);  
+/* .link-icon{
+  width: 44px;
+  height: 44px;
+  color: #008000;
+  background-color: crimson;
+} */
+
+/* .icon{
+  fill: currentColor;
+} */
+
+.our-clients{
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.clients-title{ 
+  
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  
+  margin-bottom: 50px;
+  margin-top: 0px; 
+}
+
+.clients-box{
+  display: flex;
+  margin-top: 0px; 
+  margin-bottom: 0px;
+} 
+
+.client-item{
+  width: 170px;
+  height: 90px;
   
 }
+
+
+.client-item:not(:last-child){
+  margin-right: 30px;
+}
+
+
+.client-item{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+
+.client-link{
+  display: flex;
+  width: 170px;
+  height: 90px;
+  align-items: center;
+  justify-content: center;
+  color: var(--social-icon);
+  border: 1px solid var(--social-icon)
+}
+
+.client-link:hover{
+  color: var(--link-collor);
+  border: 1px solid  var(--link-collor)
+}
+
+
+.client-logo{
+  fill: currentColor;
+}
+
 
 /* Подвал сайта  */
 .footer-back {
