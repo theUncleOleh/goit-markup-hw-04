@@ -23,7 +23,13 @@ body {
   --header-back: #ececec;
   --social-icon: #AFB1B8;
   --team-back: #F5F4FA;
-   --back: rgba(255,255,255,0.1)
+  --back: rgba(255,255,255,0.1)
+}
+
+button{
+  border: none;
+  color: none;
+  background-color: transparent; ;
 }
 
 /* контейнер */
@@ -191,9 +197,9 @@ img {
 
   
 
-.item {
+/* .item {
   outline: 1px solid #008000
-}
+} */
 
 /* .nav-links .item {
   outline: 1px solid green;
@@ -693,32 +699,37 @@ img {
   fill: var(--white-text-collor) ;
 }
 
+/* Портфлио */
+
 /* кнопки в портфолио */
-.main-button-item {
-  font-family: Roboto, sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 26px;
-  background: #f5f4fa;
-  border-radius: 4px;
-}
 
-.main-button {
+.main-button{
   display: flex;
-  margin-bottom: 34px;
-  margin-top: 0px;
   justify-content: center;
+  margin-top: 0px;
   padding-left: 0px;
+  margin-bottom: 34px;
 }
 
-.main-button-item:hover,
-.main-button-item:focus {
-  color: var(--link-collor);
+.main-button-mark:not(:first-child){
+  margin-left: 8px;
 }
 
-.main-button-item {
-  margin-right: 8px;
+.main-button-mark{ 
+  display: flex;
+  height: 38px;
+  background-color: var(--team-back);
+  border-radius: 4px;
+  color: var(--social-icon);
+}
+
+.main-button-item{
+  color: currentColor;
+}
+
+.main-button-mark:hover{
+  background-color: var(--link-collor) ;
+  color: var(--white-text-collor) ;
 }
 
 /*  портфолио проекты */
