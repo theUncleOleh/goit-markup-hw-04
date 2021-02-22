@@ -714,7 +714,8 @@ img {
   justify-content: center;
   margin-top: 0px;
   padding-left: 0px;
-  margin-bottom: 34px;
+  margin-bottom: 34px; 
+ 
 }
 
 .main-button-mark:not(:first-child){
@@ -727,6 +728,22 @@ img {
   background-color: var(--team-back);
   border-radius: 4px;
   color: var(--h-collor);
+
+}
+
+.main-button-item{
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var( --h-collor);
+  padding-left: 22px;
+  padding-right: 22px;
+  padding-top: 6px;
+  padding-bottom: 6px;
 }
 
 .main-button-item{
@@ -744,6 +761,9 @@ img {
   padding-top: 94px;
 }
 
+
+  
+  
 .product-name {
   font-family: Roboto, sans-serif;
   font-style: normal;
