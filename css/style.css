@@ -70,9 +70,7 @@ img {
 }
 
 /*  Хедер сайта */
-.header-back {
-  border: 1px solid #ececec;
-}
+
 
 .header-nav {
   display: flex;
@@ -329,15 +327,18 @@ img {
   padding-bottom: 94px;
 }
 
-.work-title {
+.work-title { 
+  font-family: Roboto, sans-serif;
   text-align: center;
   margin-top: 0px;
-  font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 36px;
-  line-height: 1.16;
+  line-height: 1.16; 
+  color: var(--h-collor);
+  margin-bottom: 50px ;
 }
+ 
 
 .work-item-frame {
   /* outline: 1px solid green; */
@@ -389,6 +390,7 @@ img {
   font-size: 36px;
   line-height: 1.16;
   letter-spacing: 0.03em;
+  color: var(--h-collor);
 }
 
 .team-card {
@@ -408,6 +410,7 @@ img {
 
 .team-card-item {
   margin-right: 30px;
+  background-color: var(--white-text-collor);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
@@ -466,10 +469,12 @@ img {
   margin-left: 10px;
 }
 
-.link-icon:hover {
+.link-icon:hover,
+.link-icon:focus{
   background-color: var(--link-collor);
   color: var(--white-text-collor);
 }
+
 /* .icon{
   fill: var( --social-icon)
 
@@ -504,7 +509,7 @@ img {
   line-height: 42px;
   text-align: center;
   letter-spacing: 0.03em;
-  
+  color: var(--h-collor) ;
   margin-bottom: 50px;
   margin-top: 0px; 
 }
@@ -691,7 +696,8 @@ img {
   background-color: rgba(255, 255, 255, 0.1); ;
 }
  
-.footer-link:hover{
+.footer-link:hover,
+.footer-link:focus{
   background-color: var(--link-collor) ;
 }
 
