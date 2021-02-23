@@ -727,13 +727,14 @@ img {
   display: flex;
   height: 38px;
   background-color: var(--team-back);
-  border-radius: 4px;
+  /* border-radius: 4px; */
   color: var(--h-collor);
 
 }
 
 .main-button-item{
-  display: flex;
+  display: flex; 
+  border-radius: 4px;
   font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -749,18 +750,18 @@ img {
 }
 
 
-.main-button-mark:hover,
-.main-button-mark:focus {
+.main-button-item:hover,
+.main-button-item:focus {
   background-color: var(--link-collor) ;
   color: var(--white-text-collor) ; 
   border-color: var(--link-collor);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-
+/* 
 .main-button-item {
   color: currentColor;
-}
+} */
 
 /*  портфолио проекты */
 .design-work {
@@ -798,10 +799,10 @@ img {
   border: 1px solid #EEEEEE;
 }
 
-.progects-name:hover,
+/* .progects-name:hover,
 .progects-name:focus{
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-}
+} */
 
 /* .progects-name * {
   outline: 1px solid #008000;
@@ -826,6 +827,11 @@ img {
 
 .product-title {
   display: block;
+}
+
+.product-title:hover,
+.product-title:focus{
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .our-product {
