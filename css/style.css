@@ -733,6 +733,7 @@ img {
 }
 
 .main-button-item{
+  display: flex;
   font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -749,13 +750,15 @@ img {
 
 
 .main-button-mark:hover,
-.main-button-mark:focus{
+.main-button-mark:focus {
   background-color: var(--link-collor) ;
-  color: var(--white-text-collor) ;
+  color: var(--white-text-collor) ; 
+  border-color: var(--link-collor);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 
-.main-button-item{
+.main-button-item {
   color: currentColor;
 }
 
@@ -795,9 +798,11 @@ img {
   border: 1px solid #EEEEEE;
 }
 
-.progects-name:hover{
+.progects-name:hover,
+.progects-name:focus{
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
+
 /* .progects-name * {
   outline: 1px solid #008000;
 } */
