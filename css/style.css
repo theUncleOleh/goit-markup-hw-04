@@ -518,7 +518,7 @@ img {
   display: flex;
   margin-top: 0px; 
   margin-bottom: 0px;
-   padding-left: 0px;
+  padding-left: 0px;
 } 
 
 .client-item{
@@ -551,7 +551,8 @@ img {
   border: 1px solid var(--social-icon)
 }
 
-.client-link:hover{
+.client-link:hover,
+.client-link:focus{
   color: var(--link-collor);
   border: 1px solid  var(--link-collor)
 }
@@ -746,13 +747,16 @@ img {
   padding-bottom: 6px;
 }
 
-.main-button-item{
-  color: currentColor;
-}
 
-.main-button-mark:hover{
+.main-button-mark:hover,
+.main-button-mark:focus{
   background-color: var(--link-collor) ;
   color: var(--white-text-collor) ;
+}
+
+
+.main-button-item{
+  color: currentColor;
 }
 
 /*  портфолио проекты */
