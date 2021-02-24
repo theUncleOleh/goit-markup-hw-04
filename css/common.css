@@ -38,7 +38,8 @@ a:focus{
 }
 
 .button:focus{ 
-  outline: none
+  outline: none;
+  border: none;
 }
 
   

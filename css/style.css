@@ -67,10 +67,13 @@ img {
 
 .link-black {
   color: black;
-}
+} 
 
 /*  Хедер сайта */
 
+.header-line-bottom{
+  border-bottom: 1px solid #ECECEC
+}
 
 .header-nav {
   display: flex;
